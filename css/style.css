@@ -209,3 +209,7 @@ h1 { overflow-wrap: break-word; }
   body { padding-bottom: 76px; }
 }
 .card p { color: var(--ink); }
+.features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 28px; }
+.features .card p { margin: 12px 0 0; font-weight: 700; }
+@media (max-width: 860px) { .features { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 460px) { .features { grid-template-columns: 1fr; } }
