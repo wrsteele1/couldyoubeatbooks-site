@@ -38,9 +38,9 @@ h1 { font-size: clamp(2.4rem, 7vw, 4.4rem); margin: 0 0 .3em; }
 h2 { font-size: clamp(1.9rem, 4.6vw, 2.8rem); margin: 0 0 .5em; }
 h3 { font-family: var(--display); font-weight: 400; font-size: 1.35rem; line-height: 1.1; margin: 0 0 .35em; letter-spacing: .02em; }
 .y { color: var(--yellow); }
-.swoosh { position: relative; display: inline-block; }
+.swoosh { position: relative; display: inline-block; z-index: 0; }
 .swoosh::after {
-  content: ""; position: absolute; left: 4%; right: 2%; bottom: -.12em; height: .14em;
+  content: ""; position: absolute; left: 4%; right: 2%; bottom: .1em; height: .1em; z-index: -1;
   background: var(--red); border-radius: 50% 40% 60% 30%; transform: rotate(-1.5deg);
 }
 .on-light h1, .on-light h2 { color: var(--yellow); }
@@ -199,3 +199,13 @@ section { padding: 64px 0; }
 .wrap > .sign { margin-bottom: 26px; }
 .grid > *, .split > * { min-width: 0; }
 h1 { overflow-wrap: break-word; }
+.trust { margin-top: 18px; font-weight: 800; font-size: .95rem; color: #cfe6c9; }
+.paths .card { transform: none !important; }
+.path-link { display: inline-block; margin-top: 4px; font-family: var(--display); font-size: 1.1rem; color: var(--red); text-decoration: none; letter-spacing: .02em; }
+.path-link:hover { text-decoration: underline; }
+.mobile-cta { display: none; }
+@media (max-width: 760px) {
+  .mobile-cta { display: block; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 20; text-align: center; }
+  body { padding-bottom: 76px; }
+}
+.card p { color: var(--ink); }
