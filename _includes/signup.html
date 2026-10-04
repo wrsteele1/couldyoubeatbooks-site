@@ -1,0 +1,18 @@
+<section>
+  <div class="wrap">
+    <div class="signup">
+      <h2>{{ include.heading | default: "Be first to hear about the next matchup" }}</h2>
+      <p>{{ include.text | default: 'One email when a new book comes out, plus a free printable "My Could You Beat... Collection" checklist. For grown-ups only.' }}</p>
+      {% if site.signup_action != "" %}
+      <form action="{{ site.signup_action }}" method="post">
+        <label class="visually-hidden" for="email">Email address</label>
+        <input id="email" type="email" name="email_address" placeholder="Parent's email address" required>
+        <button class="btn" type="submit">Sign me up</button>
+      </form>
+      {% else %}
+      <div class="btn-row"><span class="btn" aria-disabled="true">Sign-up opens soon</span></div>
+      {% endif %}
+      <p class="fineprint">We never collect information from children. Unsubscribe any time.</p>
+    </div>
+  </div>
+</section>

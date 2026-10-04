@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">Could You Beat<span>...</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="/gorilla/" {% if page.nav == 'gorilla' %}aria-current="page"{% endif %}>Gorilla</a>
+        <a href="/grizzly/" {% if page.nav == 'grizzly' %}aria-current="page"{% endif %}>Grizzly</a>
+        <a href="/great-white-shark/" {% if page.nav == 'shark' %}aria-current="page"{% endif %}>Shark</a>
+        <a href="/schools/" {% if page.nav == 'schools' %}aria-current="page"{% endif %}>Schools &amp; Libraries</a>
+        <a href="/about/" {% if page.nav == 'about' %}aria-current="page"{% endif %}>About</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+{{ content }}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>&copy; {{ 'now' | date: '%Y' }} {{ site.publisher }}. All rights reserved.</div>
+      <div><a href="/about/">About</a> &middot; <a href="/schools/">Schools &amp; Libraries</a> &middot; <a href="mailto:hello@couldyoubeatbooks.com">Contact</a></div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+title: Could You Beat... Books
+description: Fact-packed picture books for ages 5 to 9 that put kids head-to-head with the toughest animals on Earth.
+url: https://couldyoubeatbooks.com
+publisher: Colt & Bear Publishing
+# Paste the email provider's form URL here once the list is set up (Kit or Mailchimp).
+signup_action: ""
+# Store links go here once the books are listed.
+links:
+  gorilla_amazon: ""
+  grizzly_amazon: ""
+exclude:
+  - README.md

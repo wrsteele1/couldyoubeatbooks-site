@@ -1,0 +1,9 @@
+{% assign link = site.links[include.key] %}
+<div class="btn-row">
+  {% if link != "" %}
+  <a class="btn" href="{{ link }}" rel="noopener">Buy the paperback on Amazon</a>
+  {% else %}
+  <span class="btn" aria-disabled="true">On sale November 2026</span>
+  {% endif %}
+  {% if include.secondary %}<a class="btn secondary" href="{{ include.secondary_href }}">{{ include.secondary }}</a>{% endif %}
+</div>
