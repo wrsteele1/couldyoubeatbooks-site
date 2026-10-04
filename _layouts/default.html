@@ -33,7 +33,7 @@
   <footer class="site-footer">
     <div class="wrap">
       <div><div class="motto">Real animals. Real facts. Wild challenges.</div>&copy; {{ 'now' | date: '%Y' }} {{ site.publisher }}. All rights reserved.</div>
-      <div><a href="/about/">About</a> &middot; <a href="/schools/">Schools &amp; Libraries</a> &middot; <a href="mailto:hello@couldyoubeatbooks.com">Contact</a></div>
+      <div><a href="/about/">About</a> &middot; <a href="/schools/">Schools &amp; Libraries</a> &middot; <a href="mailto:{{ site.contact_email }}">Contact</a></div>
     </div>
   </footer>
   {% unless page.hide_mobile_cta %}<a class="btn mobile-cta" href="{% if page.url == '/schools/' or page.url == '/404.html' %}/{% endif %}#notify">Get the free scorecard</a>{% endunless %}
