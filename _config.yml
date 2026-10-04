@@ -3,7 +3,7 @@ description: "Real animals. Real facts. Wild challenges. Picture books for ages 
 url: https://couldyoubeatbooks.com
 publisher: Colt & Bear Publishing
 # Paste the email provider's form URL here once the list is set up (Kit or Mailchimp).
-signup_action: ""
+signup_action: "https://app.kit.com/forms/10002044/subscriptions"
 # Store links go here once the books are listed.
 links:
   gorilla_amazon: ""
