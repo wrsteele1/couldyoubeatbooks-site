@@ -36,6 +36,20 @@
       <div><a href="/about/">About</a> &middot; <a href="/schools/">Schools &amp; Libraries</a> &middot; <a href="mailto:hello@couldyoubeatbooks.com">Contact</a></div>
     </div>
   </footer>
-  {% unless page.hide_mobile_cta %}<a class="btn mobile-cta" href="{% if page.url == '/schools/' %}/{% endif %}#notify">Get the free scorecard</a>{% endunless %}
+  {% unless page.hide_mobile_cta %}<a class="btn mobile-cta" href="{% if page.url == '/schools/' or page.url == '/404.html' %}/{% endif %}#notify">Get the free scorecard</a>{% endunless %}
+  <script>
+    // Scorecard buttons: after jumping to the sign-up box, put the cursor in the email field.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href$="#notify"]');
+      var box = document.querySelector('#notify input[type=email]');
+      if (!a || !box || a.pathname !== location.pathname) return;
+      setTimeout(function () { box.focus({ preventScroll: true }); }, 600);
+    });
+    // Hide the floating phone button while the sign-up box is on screen.
+    var cta = document.querySelector('.mobile-cta'), signup = document.getElementById('notify');
+    if (cta && signup && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { cta.style.display = es[0].isIntersecting ? 'none' : ''; }).observe(signup);
+    }
+  </script>
 </body>
 </html>
