@@ -13,6 +13,18 @@
   <link rel="preload" href="/fonts/luckiest-guy.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/fonts.css">
   <link rel="stylesheet" href="/css/style.css">
+  {%- if page.book %}
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Book","name":{{ page.book.name | jsonify }},
+   "author":{"@type":"Person","name":"Wes Steele"},
+   "publisher":{"@type":"Organization","name":{{ site.publisher | jsonify }}},
+   "image":"{{ site.url }}/img/{{ page.og_image }}","url":"{{ site.url }}{{ page.url }}",
+   "typicalAgeRange":"5-9","numberOfPages":32,"inLanguage":"en",
+   "workExample":[
+    {"@type":"Book","bookFormat":"https://schema.org/Paperback","isbn":"{{ page.book.isbn_paperback }}","offers":{"@type":"Offer","price":"12.99","priceCurrency":"USD"}},
+    {"@type":"Book","bookFormat":"https://schema.org/Hardcover","isbn":"{{ page.book.isbn_hardcover }}","offers":{"@type":"Offer","price":"21.99","priceCurrency":"USD"}}]}
+  </script>
+  {%- endif %}
 </head>
 <body>
   <header class="site-header">
