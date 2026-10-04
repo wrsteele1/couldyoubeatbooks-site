@@ -1,55 +1,91 @@
 ---
 layout: default
-description: Fact-packed picture books for ages 5 to 9 that put kids head-to-head with the toughest animals on Earth. Starting with Gorilla and Grizzly.
+description: "Real animals. Real facts. Wild challenges. Picture books for ages 5 to 9 that put kids head-to-head with a gorilla, a grizzly bear and more."
 ---
 <section class="hero">
-  <div class="wrap split">
+  <div class="wrap grid">
     <div>
-      <p class="eyebrow">Nonfiction picture books &middot; Ages 5 to 9</p>
-      <h1>Could you beat a gorilla? Find out.</h1>
-      <p class="lead">Each book puts a kid head-to-head with one of the toughest animals on Earth: strength, speed, size and senses. The animal usually wins. The facts are real, and kids remember every one.</p>
-      {% include buy.html key="gorilla_amazon" secondary="Meet the books" secondary_href="#shelf" %}
+      <p class="kicker">Picture books for ages 5 to 9</p>
+      <h1>Could <span class="y swoosh">You</span> beat a gorilla?</h1>
+      <p class="lead">Grip. Tug-of-war. Climbing. Bite. Each book puts you head-to-head with one of the most powerful animals on Earth, one round at a time. Keep score, learn real facts, and find out who wins.</p>
+      <div class="btn-row">
+        <a class="btn" href="#books">Meet the books</a>
+        <a class="btn white" href="#notify">Get launch news</a>
+      </div>
     </div>
-    <div class="cover gorilla" role="img" aria-label="Could You Beat a Gorilla? cover">
-      <div class="small">Could You Beat a</div>
-      <div class="big">Gorilla?</div>
+    <div class="covers">
+      <img class="c2" src="/img/grizzly-cover.jpg" alt="Cover of Could You Beat a Grizzly Bear?" width="1000" height="1000">
+      <img class="c1" src="/img/gorilla-cover.jpg" alt="Cover of Could You Beat a Gorilla?" width="963" height="963">
     </div>
   </div>
 </section>
 
-<section class="band" id="shelf">
+<section class="on-light">
   <div class="wrap">
-    <p class="eyebrow">Collect them all</p>
-    <h2>The matchups so far</h2>
+    <div class="center"><div class="sign"><h2>How the <span class="y">challenge</span> works</h2></div></div>
+    <div class="steps">
+      <div class="card">
+        <div class="step-num">1</div>
+        <h3>Meet your opponent</h3>
+        <p>Size it up with the Tale of the Tape: height, weight, teeth, diet and habitat, all compared to you.</p>
+      </div>
+      <div class="card">
+        <div class="step-num">2</div>
+        <h3>Battle round by round</h3>
+        <p>Same branch. Same rope. Same snack. Each round tests one real skill, and the scoreboard keeps track.</p>
+        <div class="scoreboard" aria-label="Example scoreboard: You 1, Gorilla 2">
+          <div class="title">Round 3 score</div>
+          <div class="cell"><div class="who">You</div><div class="num">1</div></div>
+          <div class="cell"><div class="who">Gorilla</div><div class="num">2</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="step-num">3</div>
+        <h3>Make the smart move</h3>
+        <p>The last challenge is a real one: you meet the animal in the wild. What should you do? Kids learn to respect wildlife and stay safe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wood-band" id="books">
+  <div class="wrap">
+    <div class="center"><div class="sign tilt-r"><h2>Take on the <span class="y">whole series!</span></h2></div></div>
     <div class="shelf">
-      <a href="/gorilla/">
-        <div class="cover gorilla"><div class="small">Could You Beat a</div><div class="big">Gorilla?</div></div>
+      <a class="book" href="/gorilla/">
+        <img src="/img/gorilla-cover.jpg" alt="Cover of Could You Beat a Gorilla?" width="963" height="963" loading="lazy">
         <div class="label">Could You Beat a Gorilla?</div>
         <div class="status">Coming November 2026</div>
       </a>
-      <a href="/grizzly/">
-        <div class="cover grizzly"><div class="small">Could You Beat a</div><div class="big">Grizzly?</div></div>
-        <div class="label">Could You Beat a Grizzly?</div>
+      <a class="book" href="/grizzly/">
+        <img src="/img/grizzly-cover.jpg" alt="Cover of Could You Beat a Grizzly Bear?" width="1000" height="1000" loading="lazy">
+        <div class="label">Could You Beat a Grizzly Bear?</div>
         <div class="status">Coming November 2026</div>
       </a>
-      <a href="/great-white-shark/">
-        <div class="cover soon"><div class="small">Coming next</div><div class="big">Great White Shark?</div></div>
+      <a class="book" href="/great-white-shark/">
+        <img src="/img/shark-teaser.jpg" alt="Next challenge: Could You Beat a Great White Shark?" width="1000" height="1000" loading="lazy">
         <div class="label">Could You Beat a Great White Shark?</div>
-        <div class="status">Get notified when it's out</div>
+        <div class="status">Next challenge: get notified</div>
       </a>
     </div>
   </div>
 </section>
 
-<section>
+<section class="on-light">
   <div class="wrap">
-    <h2>Why kids can't put them down</h2>
-    <div class="facts">
-      <div class="fact"><strong>You vs. the animal</strong>Every page compares the reader to the animal, so the numbers mean something to a kid.</div>
-      <div class="fact"><strong>Real facts, checked</strong>Every fact is researched and checked, including the safety advice in Grizzly.</div>
-      <div class="fact"><strong>Made to read aloud</strong>Short, punchy pages that work at bedtime and in the classroom.</div>
+    <div class="center"><div class="sign"><h2>Take a <span class="y">look inside</span></h2></div></div>
+    <div class="spread-list">
+      <figure style="margin:0">
+        <img class="spread" src="/img/gorilla-round1.jpg" alt="Spread from Could You Beat a Gorilla?: Round 1, Grip Challenge" width="1600" height="800" loading="lazy">
+        <figcaption class="spread-caption">Could You Beat a Gorilla? Round 1: Grip Challenge</figcaption>
+      </figure>
+      <figure style="margin:0">
+        <img class="spread" src="/img/grizzly-round7.jpg" alt="Spread from Could You Beat a Grizzly Bear?: Round 7, Gone Fishing" width="1600" height="800" loading="lazy">
+        <figcaption class="spread-caption">Could You Beat a Grizzly Bear? Round 7: Gone Fishing!</figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
+<div id="notify"></div>
 {% include signup.html %}

@@ -1,66 +1,47 @@
 ---
 layout: default
-title: Could You Beat a Grizzly?
+title: Could You Beat a Grizzly Bear?
 nav: grizzly
-description: A fact-packed picture book for ages 5 to 9 that puts kids head-to-head with a grizzly bear.
+og_image: grizzly-cover.jpg
+description: "You vs. a grizzly bear in the mountains, round by round. A fact-packed picture book for ages 5 to 9."
 ---
-<section class="hero">
-  <div class="wrap split">
-    <div class="cover grizzly" role="img" aria-label="Could You Beat a Grizzly? cover">
-      <div class="small">Could You Beat a</div>
-      <div class="big">Grizzly?</div>
-    </div>
+<section class="hero book-hero">
+  <div class="wrap grid">
+    <img class="cover" src="/img/grizzly-cover.jpg" alt="Cover of Could You Beat a Grizzly Bear?" width="1000" height="1000">
     <div>
-      <p class="eyebrow">Book 2 &middot; Ages 5 to 9</p>
-      <h1>Could You Beat a Grizzly?</h1>
-      <p class="lead"><span class="todo">Book blurb goes here: two or three sentences from the back cover.</span></p>
-      {% include buy.html key="grizzly_amazon" %}
-      <p><strong>About the safety pages:</strong> the bear-safety advice in this book was checked against <span class="todo">source, for example National Park Service guidance</span>.</p>
+      <p class="kicker">Book 2 &middot; Ages 5 to 9</p>
+      <h1>Could <span class="y swoosh">You</span> beat a grizzly bear?</h1>
+      <p class="lead">Grab your backpack and head into the mountains. Who has the better nose? Who catches a fish first? Round by round, you take on a grizzly and learn what makes it one of the most powerful animals in North America.</p>
+      <p class="lead">"I've got a few tricks in my backpack." Let the challenge begin!</p>
+      <div class="btn-row">{% include buy.html key="grizzly_amazon" %}<a class="btn white" href="#inside">Look inside</a></div>
     </div>
   </div>
 </section>
 
-<section class="band">
+<section class="on-light" id="inside">
+  <div class="wrap">
+    <div class="center"><div class="sign"><h2>Look <span class="y">inside</span></h2></div></div>
+    <div class="spread-list">
+      <figure style="margin:0"><img class="spread" src="/img/grizzly-round4.jpg" alt="Round 4: The Nose Knows" width="1600" height="800" loading="lazy"><figcaption class="spread-caption">Round 4: The Nose Knows!</figcaption></figure>
+      <figure style="margin:0"><img class="spread" src="/img/grizzly-round7.jpg" alt="Round 7: Gone Fishing" width="1600" height="800" loading="lazy"><figcaption class="spread-caption">Round 7: Gone Fishing!</figcaption></figure>
+    </div>
+    <div class="safety"><span class="paw" aria-hidden="true">&#128062;</span><div><strong>Bear safety, checked.</strong> Bear noses never take a day off. The book teaches kids to keep snacks secured and never feed a wild bear. Its safety advice was checked against <span class="todo">source, for example National Park Service guidance</span>.</div></div>
+  </div>
+</section>
+
+<section class="wood-band">
   <div class="wrap split">
-    <div>
-      <h2>You vs. grizzly</h2>
-      <p>A taste of what's inside. The book has the full matchup.</p>
-    </div>
-    <div class="vs">
-      <table>
-        <thead><tr><th></th><th>You (age 7)</th><th>Grizzly</th></tr></thead>
-        <tbody>
-          <tr><td>Weight</td><td>About 50 lb</td><td><span class="todo">From the book</span></td></tr>
-          <tr><td>Top speed</td><td><span class="todo">From the book</span></td><td><span class="todo">From the book</span></td></tr>
-          <tr><td>Who wins?</td><td colspan="2">Read the book to find out.</td></tr>
-        </tbody>
-      </table>
+    <div><div class="sign"><h2>Book <span class="y">details</span></h2></div></div>
+    <div class="card">
+      <ul class="details">
+        <li><span>Ages</span><span>5 to 9</span></li>
+        <li><span>Author</span><span>Wes Steele</span></li>
+        <li><span>Paperback ISBN</span><span class="todo">TBD</span></li>
+        <li><span>Hardcover ISBN</span><span class="todo">TBD</span></li>
+        <li><span>Publisher</span><span>{{ site.publisher }}</span></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <h2>Look inside</h2>
-    <div class="spreads">
-      <div class="spread">Sample spread 1</div>
-      <div class="spread">Sample spread 2</div>
-      <div class="spread">Sample spread 3</div>
-    </div>
-  </div>
-</section>
-
-<section class="band">
-  <div class="wrap">
-    <h2>Book details</h2>
-    <ul class="details">
-      <li><span>Ages</span><span>5 to 9</span></li>
-      <li><span>Paperback ISBN</span><span class="todo">TBD</span></li>
-      <li><span>Hardcover ISBN</span><span class="todo">TBD</span></li>
-      <li><span>Pages</span><span class="todo">TBD</span></li>
-      <li><span>Publisher</span><span>{{ site.publisher }}</span></li>
-    </ul>
-  </div>
-</section>
-
-{% include signup.html heading="Want to know when the Great White Shark arrives?" %}
+{% include signup.html heading="Want to know when the <span class='y'>shark</span> arrives?" %}

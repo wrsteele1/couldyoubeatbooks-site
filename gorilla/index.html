@@ -2,64 +2,74 @@
 layout: default
 title: Could You Beat a Gorilla?
 nav: gorilla
-description: A fact-packed picture book for ages 5 to 9 that puts kids head-to-head with a silverback gorilla.
+og_image: gorilla-cover.jpg
+description: "You vs. a silverback gorilla in eight real-world rounds. A fact-packed picture book for ages 5 to 9."
 ---
-<section class="hero">
-  <div class="wrap split">
-    <div class="cover gorilla" role="img" aria-label="Could You Beat a Gorilla? cover">
-      <div class="small">Could You Beat a</div>
-      <div class="big">Gorilla?</div>
-    </div>
+<section class="hero book-hero">
+  <div class="wrap grid">
+    <img class="cover" src="/img/gorilla-cover.jpg" alt="Cover of Could You Beat a Gorilla?" width="963" height="963">
     <div>
-      <p class="eyebrow">Book 1 &middot; Ages 5 to 9</p>
-      <h1>Could You Beat a Gorilla?</h1>
-      <p class="lead"><span class="todo">Book blurb goes here: two or three sentences from the back cover.</span></p>
-      {% include buy.html key="gorilla_amazon" %}
+      <p class="kicker">Book 1 &middot; Ages 5 to 9</p>
+      <h1>Could <span class="y swoosh">You</span> beat a gorilla?</h1>
+      <p class="lead">You step into the jungle. The leaves part, and there he is: a silverback gorilla. Strong. Smart. Calm. And very real.</p>
+      <p class="lead">Eight rounds. One scoreboard. Real facts on every page. Can you beat a gorilla? Let's find out!</p>
+      <div class="btn-row">{% include buy.html key="gorilla_amazon" %}<a class="btn white" href="#inside">Look inside</a></div>
     </div>
   </div>
 </section>
 
-<section class="band">
+<section class="on-light">
+  <div class="wrap">
+    <div class="center"><div class="sign"><h2>Tale of the <span class="y">tape</span></h2></div></div>
+    <div class="tape">
+      <div class="card"><span class="tag">Height</span><p class="big" style="margin-top:12px">5&ndash;6 feet</p><p class="vs-line">standing. You: about 4 feet.</p></div>
+      <div class="card"><span class="tag">Weight</span><p class="big" style="margin-top:12px">300&ndash;500 lb</p><p class="vs-line">That's massive!</p></div>
+      <div class="card"><span class="tag">Diet</span><p class="big" style="margin-top:12px">Mostly plants</p><p class="vs-line">Leaves, stems, fruit and bark.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="center"><div class="sign tilt-r"><h2>8 rounds. <span class="y">Who wins?</span></h2></div></div>
+    <ol class="rounds">
+      <li><span class="rn">Round 1</span><span class="rt">Grip Challenge</span></li>
+      <li><span class="rn">Round 2</span><span class="rt">Tug-of-War</span></li>
+      <li><span class="rn">Round 3</span><span class="rt">Endurance Challenge</span></li>
+      <li><span class="rn">Round 4</span><span class="rt">Climbing Challenge</span></li>
+      <li><span class="rn">Round 5</span><span class="rt">Throwing Challenge</span></li>
+      <li><span class="rn">Round 6</span><span class="rt">Bite Challenge</span></li>
+      <li><span class="rn">Round 7</span><span class="rt">Puzzle Challenge</span></li>
+      <li><span class="rn">Round 8</span><span class="rt">Build a Bed</span></li>
+    </ol>
+    <p class="center" style="margin-top:26px">Then the real-world challenge: you spot a wild gorilla. What should you do? Plus a true-or-false quiz to test what you learned.</p>
+  </div>
+</section>
+
+<section class="on-light" id="inside">
+  <div class="wrap">
+    <div class="center"><div class="sign"><h2>Look <span class="y">inside</span></h2></div></div>
+    <div class="spread-list">
+      <figure style="margin:0"><img class="spread" src="/img/gorilla-round1.jpg" alt="Round 1: Grip Challenge" width="1600" height="800" loading="lazy"><figcaption class="spread-caption">Round 1: Grip Challenge</figcaption></figure>
+      <figure style="margin:0"><img class="spread" src="/img/gorilla-round2.jpg" alt="Round 2: Tug-of-War" width="1600" height="800" loading="lazy"><figcaption class="spread-caption">Round 2: Tug-of-War</figcaption></figure>
+      <figure style="margin:0"><img class="spread" src="/img/gorilla-round4.jpg" alt="Round 4: Climbing Challenge" width="1600" height="800" loading="lazy"><figcaption class="spread-caption">Round 4: Climbing Challenge</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="wood-band">
   <div class="wrap split">
-    <div>
-      <h2>You vs. gorilla</h2>
-      <p>A taste of what's inside. The book has the full matchup.</p>
-    </div>
-    <div class="vs">
-      <table>
-        <thead><tr><th></th><th>You (age 7)</th><th>Silverback</th></tr></thead>
-        <tbody>
-          <tr><td>Weight</td><td>About 50 lb</td><td><span class="todo">From the book</span></td></tr>
-          <tr><td>Strength</td><td><span class="todo">From the book</span></td><td><span class="todo">From the book</span></td></tr>
-          <tr><td>Who wins?</td><td colspan="2">Read the book to find out.</td></tr>
-        </tbody>
-      </table>
+    <div><div class="sign"><h2>Book <span class="y">details</span></h2></div></div>
+    <div class="card">
+      <ul class="details">
+        <li><span>Ages</span><span>5 to 9</span></li>
+        <li><span>Author</span><span>Wes Steele</span></li>
+        <li><span>Paperback ISBN</span><span class="todo">TBD</span></li>
+        <li><span>Hardcover ISBN</span><span class="todo">TBD</span></li>
+        <li><span>Publisher</span><span>{{ site.publisher }}</span></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <h2>Look inside</h2>
-    <div class="spreads">
-      <div class="spread">Sample spread 1</div>
-      <div class="spread">Sample spread 2</div>
-      <div class="spread">Sample spread 3</div>
-    </div>
-  </div>
-</section>
-
-<section class="band">
-  <div class="wrap">
-    <h2>Book details</h2>
-    <ul class="details">
-      <li><span>Ages</span><span>5 to 9</span></li>
-      <li><span>Paperback ISBN</span><span class="todo">TBD</span></li>
-      <li><span>Hardcover ISBN</span><span class="todo">TBD</span></li>
-      <li><span>Pages</span><span class="todo">TBD</span></li>
-      <li><span>Publisher</span><span>{{ site.publisher }}</span></li>
-    </ul>
-  </div>
-</section>
-
-{% include signup.html heading="Want to know when Grizzly and Shark arrive?" %}
+{% include signup.html heading="Ready for the <span class='y'>next challenge?</span>" %}

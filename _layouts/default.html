@@ -8,16 +8,16 @@
   <meta property="og:title" content="{{ page.title | default: site.title }}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ site.url }}/img/{{ page.og_image | default: 'gorilla-cover.jpg' }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="/fonts/luckiest-guy.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/fonts.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="/">Could You Beat<span>...</span></a>
+      <a class="brand" href="/">Could <span class="you">You</span> Beat?</a>
       <nav class="nav" aria-label="Main">
         <a href="/gorilla/" {% if page.nav == 'gorilla' %}aria-current="page"{% endif %}>Gorilla</a>
         <a href="/grizzly/" {% if page.nav == 'grizzly' %}aria-current="page"{% endif %}>Grizzly</a>
@@ -32,7 +32,7 @@
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <div>&copy; {{ 'now' | date: '%Y' }} {{ site.publisher }}. All rights reserved.</div>
+      <div><div class="motto">Real animals. Real facts. Wild challenges.</div>&copy; {{ 'now' | date: '%Y' }} {{ site.publisher }}. All rights reserved.</div>
       <div><a href="/about/">About</a> &middot; <a href="/schools/">Schools &amp; Libraries</a> &middot; <a href="mailto:hello@couldyoubeatbooks.com">Contact</a></div>
     </div>
   </footer>
